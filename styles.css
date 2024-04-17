@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: #fff5ef;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+}
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transition: margin-right .5s; /* Adjusts timing to match sidebar */
+}
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+    width: 100%;
+    color: black;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo img{
+    width: 120px;
+}
+
+
+/* The button used to open the sidebar */
+.sidebar-toggle {
+  margin-right: 16px;
+  font-size: 40px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+}
+
+.nav-mainlinks {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-mainlinks a{
+  margin: 0 12px;
+}
+
+
+.btn{
+    background-color: darkgreen;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    text-wrap: nowrap;
+
+    margin-right: 16px;
+    padding: 6px;
+}
+
+
+/* Animation to make the nav bar look less static */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-mainlinks-play h1 {
+  display: inline-block; /* Allows transformation */
+  animation: pulse 2s infinite; /* Sets animation for the h1 element in the nav bar */
+}
+
+header{
+    background-color: azure;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* SIDEBAR */
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+/* LANDING PAGE - index.html */
+
+#landing {
+  color: black;
+  text-align: center;
+  padding: 240px 0;
+
+  background: url('assets/arena.jpeg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+#landing h1 {
+  margin-bottom: 20px;
+}
+
+#landing p {
+  margin-bottom: 30px;
+}
+
+.landing-btn{
+  padding: 12px;
+  margin: 12px;
+}
+
+.landing-container {
+  background-color: white;
+  max-width: 600px;
+  padding: 40px 60px;
+}
+
+
+/* ABOUT Section */
+#about {
+  background-color: rgb(90, 90, 90);
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-text-container {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: black solid 1px;
+  border-radius: 4px;
+  padding: 40px;
+
+  background-color: darkgray
+}
+
+.about-text-container h2{
+  margin-bottom: 40px;
+}
+
+
+
+/* HOW IT WORKS Section */
+#how-it-works {
+  margin: 40px;
+}
+
+
+
+/* CTA Section */
+#cta {
+  margin: 20px;
+  width: 100%;
+}
+
+.cta-container {
+  margin-bottom: 20px;
+
+  border-top: black solid 1px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-container h2{
+margin: 20px 0;
+}
+
+
+
+
+/* GAME.html */
+
+.team-info {
+    padding: 16px 0;
+    margin: 20px 0;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  margin-top: 8px;
+}
+
+.pitch {
+    max-width: 860px;
+    width: 100%;
+    height: 100%;
+    
+    /* Source: https://pixabay.com/vectors/football-field-soccer-football-pitch-1428839/  */
+    background-image: url(assets/football-pitch.svg);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.players-row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.player-container {
+  text-align: center;
+}
+
+.player {
+    /* Source: https://pixabay.com/vectors/t-shirt-grey-clothing-casual-34005/ */
+    background-image: url(assets/jersey.svg);
+    background-size: contain; /* or 'contain' based on preference */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 65px;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+    text-align: center;
+
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.player:hover {
+    transform: scale(1.1); /* Enlarge the element by 10% on hover*/
+  }
+
+
+
+  /* GUESS MODAL */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .guessInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+/*  FOOTER  */
+  .site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 4px;
+  }
+  /* Adds an underline to each anchor tag on hover */
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-footer-img {
+    filter:grayscale()invert();
+    width: 100%;
+  }
+
+  .site-footer-copyright, .site-footer-logo, .site-footer-links{
+    max-width: 100px;
+    margin: 8px;
+ }
+
+
+
+
+
+
+
+ /* INSTRUCTIONS PAGE */
+ /* Styling is done inline and internal for the insructions page */
+/* .instructions {
+
+}
+
+.instructions-text {
+    margin-top: 40px;
+}
+
+.instructions-list {
+
+} */
+
+
+
+
+
+
+  /*    Login / Register forms   */
+
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-styles input, select{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-container-button {
+    padding: 10px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Makes the button green on hover */
+   .form-container-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .form-container a {
+    color: blue;
+    margin-bottom: 4px;
+  }
+  
+
+
+
+  /* LEADERBOARD */
+
+  
+  #leaderboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .leaderboard-container{
+    margin: 80px 0 344px 0;
+    width: 100%;
+    max-width: 700px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#leaderboard .leaderboard-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#leaderboard th {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+#leaderboard td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#leaderboard tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* Hover effect allows user to highlight an entire row */
+#leaderboard tr:hover {
+  background-color: #ddd;
+}
+
+
+
+
+/* HISTORY.html */
+
+.history-container {
+  margin: 80px 0 423px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Hover effect to show that the feature isnt implemented yet */
+.history-list-link a:hover{
+  cursor: not-allowed;
+}
+
+.history-list-link{
+  background-color: darkgreen;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+
+
+
+/* Request Page */
+
+.request-container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  background-color: white;
+}
+
+.request-form-container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.request-table-container{
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.request-table {
+  width: 100%;
+}
+
+.request-form-team {
+  margin-left: 13px;
+}
+

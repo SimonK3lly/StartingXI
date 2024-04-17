@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/StartingXiLogoMini.svg"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Leaderboards | StartingXI</title>
+</head>
+<body>
+  <div id="main-content">
+    <!-- Navigation Bar -->
+      <nav class="navbar">
+          <a class="nav-logo" href="index.html">
+            <img src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+          </a>
+          <div class="nav-mainlinks">
+            <a href="history.html" class="nav-mainlinks-history">History</a>
+            <a href="game.html" class="nav-mainlinks-play"><h1>Play</h1></a>
+            <a href="leaderboards.html" class="nav-mainlinks-leaderboard">Leaderboard</a>
+          </div>
+          <a href="#" id="sidebarToggle" class="sidebar-toggle">☰</a>
+  
+        </nav>
+
+  <!-- Leaderboard -->
+    <section id="leaderboard">
+        <div class="leaderboard-container">
+            <h1>Leaderboard</h1>
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>Games Won</th>
+                            <th>Games Played</th>
+                        </tr>
+                    </thead>
+                    <tbody class="leaderboard-table-body">
+                        <!-- Sample leaderboard entries -->
+                        <tr class="leaderboard-table-row">
+                            <td>1</td>
+                            <td>PlayerOne</td>
+                            <td>14</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PlayerTwo</td>
+                            <td>12</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>PlayerThree</td>
+                            <td>4</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>PlayerFour</td>
+                            <td>3</td>
+                            <td>13</td>
+                        </tr>
+                        <!-- Leaderboards will be generated dynamically using Javascript in the future -->
+                    </tbody>
+                </table>
+        </div>
+    </section>
+    
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="site-footer-copyright">  
+    <p>© 2024 StartingXI. All rights reserved.</p>
+  </div>
+  <div class="site-footer-logo">
+    <a href="index.html">
+      <img class="site-footer-img" src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+    </a>
+  </div>
+  <div class="site-footer-links">
+    <ul class="site-footer-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Play</a></li>
+      <li><a href="info.html">Instructions</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+</footer>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn">×</a>
+<a href="login.html">Log In</a>
+<a href="register.html">Register</a>
+<div style="margin: 40px 0;"></div>
+<a href="index.html">Home</a>
+<a href="game.html">Play</a>
+<a href="history.html">History</a>
+<a href="request.html">Request</a>
+<a href="info.html">Instructions</a>
+<a href="leaderboards.html">Leaderboards</a>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+  </body>
+  </html>

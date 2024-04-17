@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/StartingXiLogoMini.svg"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Info | StartingXI</title>
+<!-- Internal CSS -->
+    <style>
+.instructions-text {
+    margin-top: 40px;
+}
+
+.email-form {
+    border: 1px solid black;
+    color: white;
+    border-radius: 4px; /* Adds rounded corner to the border */
+    width: 100%;
+
+    background-color: darkgreen;
+    padding: 40px;
+    margin: 60px 0 150px 0;
+}
+
+.email-form button, input {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+  <div id="main-content">
+    <!-- Navigation Bar -->
+      <nav class="navbar">
+          <a class="nav-logo" href="index.html">
+            <img src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+          </a>
+          <div class="nav-mainlinks">
+            <a href="history.html" class="nav-mainlinks-history">History</a>
+            <a href="game.html" class="nav-mainlinks-play"><h1>Play</h1></a>
+            <a href="leaderboards.html" class="nav-mainlinks-leaderboard">Leaderboard</a>
+          </div>
+          <a href="#" id="sidebarToggle" class="sidebar-toggle">☰</a>
+  
+        </nav>
+
+  <!-- Instructions Text -->
+  <!-- Demonstrating examples of inline css -->
+    <div class="instructions" style="margin-top: 40px; text-align: center; max-width: 700px; width: 100%;">
+      <h1>Welcome to the Starting XI Challenge!</h1>
+      <p class="instructions-text">
+        Dive into the excitement of football and test your ball knowledge by guessing the starting lineup for the daily featured match. Focus on the team highlighted in <b>bold</b>—that's your challenge. Here's how it works:
+      </p>
+      <ul class="instructions-list" style="margin-top: 40px; text-align: left;">
+        <li>Guess the right letter in the exact spot, and it turns green, marking a perfect hit!</li>
+        <li>If your guessed letter appears in a player's name but in a different place, it will light up in orange.</li>
+        <li>If the letter doesnt appear in that player's name, it will show up in red.</li>
+        <li>You get 5 guesses for each player. If you guess every player you win the challenge for that day!</li>
+      </ul>
+      <!-- CSS is above in the head section demonstrating internal CSS-->
+      <p class="instructions-text">
+        A new match is available every day. Tune in daily for a new challenge. Subscribe to our newsletter to be the first to know about new challenges!
+      </p>
+
+    <!-- Email Signup Form -->
+      <form action="" method="POST" class="email-form">
+          <label for="email">Enter your email to be notified:</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="site-footer-copyright">  
+    <p>© 2024 StartingXI. All rights reserved.</p>
+  </div>
+  <div class="site-footer-logo">
+    <a href="index.html">
+      <img class="site-footer-img" src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+    </a>
+  </div>
+  <div class="site-footer-links">
+    <ul class="site-footer-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Play</a></li>
+      <li><a href="info.html">Instructions</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+</footer>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn">×</a>
+<a href="login.html">Log In</a>
+<a href="register.html">Register</a>
+<div style="margin: 40px 0;"></div>
+<a href="index.html">Home</a>
+<a href="game.html">Play</a>
+<a href="history.html">History</a>
+<a href="request.html">Request</a>
+<a href="info.html">Instructions</a>
+<a href="leaderboards.html">Leaderboards</a>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

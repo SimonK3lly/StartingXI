@@ -1,0 +1,18 @@
+# StartingXI
+
+Starting XI is a web-based trivia game inspired by the concept similar to Wordle, designed for football enthusiasts. Players guess the names of the starting eleven from a specific football match, receiving instant feedback on their guesses.
+
+## Features
+
+Daily Challenges: A new game available every day.
+Game Mechanics: Feedback colors indicate the accuracy of guesses.
+History Section: Access to play previous games.
+User Accounts: For tracking scores and progress.
+Leaderboards: Displaying top players.
+
+## Technologies Used
+
+- HTML5
+- CSS
+- Javascript
+

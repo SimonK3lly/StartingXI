@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/StartingXiLogoMini.svg"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Leaderboards | StartingXI</title>
+</head>
+<body>
+  <div id="main-content">
+    <!-- Navigation Bar -->
+      <nav class="navbar">
+          <a class="nav-logo" href="index.html">
+            <img src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+          </a>
+          <div class="nav-mainlinks">
+            <a href="history.html" class="nav-mainlinks-history">History</a>
+            <a href="game.html" class="nav-mainlinks-play"><h1>Play</h1></a>
+            <a href="leaderboards.html" class="nav-mainlinks-leaderboard">Leaderboard</a>
+          </div>
+          <a href="#" id="sidebarToggle" class="sidebar-toggle">☰</a>
+  
+        </nav>
+
+
+
+        <div class="request-container">
+
+
+          <h1 style="padding: 20px 0;">Request a match to be featured in the future!</h1>
+          <p>Please specify which team you would like to be guessed (Home or Away)</p>
+        <!-- Request Form -->
+        <div class="request-form-container form-styles">
+          <form id="matchForm" class="request-form">
+            <label for="homeTeam">Home Team:</label>
+            <div class="request-form-team">
+              <input type="text" id="homeTeam" name="homeTeam" required>
+              <input type="checkbox" id="homeTeamCheckbox" name="homeTeamCheckbox">
+              <br>
+            </div>
+            
+            <label for="awayTeam">Away Team:</label>
+            <div class="request-form-team">
+              <input type="text" id="awayTeam" name="awayTeam" required>
+              <input type="checkbox" id="awayTeamCheckbox" name="awayTeamCheckbox">
+              <br>
+            </div>
+              
+            <label for="matchDate">Date:</label>
+            <input type="date" id="matchDate" name="matchDate" required><br>
+            
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" placeholder="e.g., 3-1" required><br>
+            
+            <label for="formation">Formation:</label>
+            <select id="formation" name="formation" required>
+                <option value="">Select a Formation</option>
+                <option value="4-3-3">4-3-3</option>
+                <option value="4-4-2">4-4-2</option>
+                <option value="3-5-2">3-5-2</option>
+                <option value="5-2-3">5-2-3</option>
+            </select><br>
+            
+            <div id="playerInputs"></div>
+            
+            <button type="submit" class="form-container-button">Submit Match</button>
+          </form>
+        
+        </div>
+
+  <!-- Table -->
+  <section id="matchSubmissions">
+    <div class="request-table-container">
+        <h1 style="margin-bottom: 16px;">Match Submissions</h1>
+        <table class="request-table">
+            <thead>
+                <tr>
+                    <th>Home</th>
+                    <th>Away</th>
+                    <th>Date</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody class="request-table-body">
+                <!-- Dynamically generate table content -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+</div>
+    
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer-copyright">  
+      <p>© 2024 StartingXI. All rights reserved.</p>
+    </div>
+    <div class="site-footer-logo">
+      <a href="index.html">
+        <img class="site-footer-img" src="assets/StartingXiLogo.svg" alt="StartingXI Logo">
+      </a>
+    </div>
+    <div class="site-footer-links">
+      <ul class="site-footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Play</a></li>
+        <li><a href="info.html">Instructions</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn">×</a>
+<a href="login.html">Log In</a>
+<a href="register.html">Register</a>
+<div style="margin: 40px 0;"></div>
+<a href="index.html">Home</a>
+<a href="game.html">Play</a>
+<a href="history.html">History</a>
+<a href="request.html">Request</a>
+<a href="info.html">Instructions</a>
+<a href="leaderboards.html">Leaderboards</a>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="request.js"></script>
+  </body>
+  </html>
